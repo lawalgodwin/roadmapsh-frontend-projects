@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #24252A;
+}
+
+body {
+    font-family: 'Montserrat' sans-serif;
+    color: #edf0f1;
+    font-weight: 500;
+}
+
+.flex-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-end;
+    height: max-content;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    background-color: #24252A;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1.2rem;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 16rem 1fr 16rem;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "hero hero hero"
+    "projects experience education"
+    "projects opensource education"
+    "review review review";
+    width: 60%;
+    margin: 2rem auto;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.hero {
+    grid-area: hero;
+    text-align: center;
+    padding: 4rem;
+    margin: 4rem auto;
+}
+
+.hero h1 {
+    font-size: 10rem;
+}
+
+.hero p {
+    color: #999;
+}
+
+.projects {
+    grid-area: projects;
+    text-align: center;
+}
+
+.experience {
+    grid-area: experience;
+    text-align: center;
+}
+
+.education {
+    grid-area: education;
+    text-align: center;
+}
+
+.open-source {
+    grid-area: opensource;
+    text-align: center;
+}
+
+.review {
+    grid-area: review;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #555;
+}
+
+.projects ul,
+.experience ul,
+.education ul,
+.review ul,
+.open-source ul
+ {
+    text-align: left;
+    list-style-type: none;
+    line-height: 1.2rem;
+}
+
+.projects ul li,
+.experience ul li,
+.education ul li,
+.review ul li,
+.open-source ul li
+ {
+    padding: .8rem;
+}
+
+.experience ul li a,
+.open-source ul li a {
+    color: teal;
+}
+
+.heading {
+    color: #eb5e28;
+}
+
+.description {
+    color: #999;
+    padding-top: .5rem;
+}
+
+.cta {
+    background-color: #df4a0f;
+    border-radius: 5em;
+    padding: 1.2rem;
+}
+
+.brief-description {
+    text-align: left;
+}

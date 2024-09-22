@@ -1,0 +1,114 @@
+body{
+    height: 100vh;
+}
+.contact-us {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 20px;    
+    padding: 50px;
+    margin: 150px auto;
+    position: relative;
+}
+
+.title h1 {
+    letter-spacing: 2.5px;
+    margin-bottom: 25px;
+    text-align: center;
+    background: #fff;
+    color: #8f969c;
+}
+
+.form,
+.form-item {
+    width: 100%;
+    background-color: #fff;
+}
+
+.form-item .input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    border: 0;
+    background: #ebeef1;
+    outline: none;
+    border-radius: 30px;
+}
+
+.form-item .input::placeholder {
+    font-size: 1.1rem;
+}
+
+.form-item .input.message {
+    height: 125px;
+    resize: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.btn {
+    background: #333;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn .fas {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-item .fas {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #d4d4d6;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #fff; */
+}
+
+.social-icons div {
+    width: 50px;
+    height: 50px;
+    /* background: red; */
+    position: relative;
+    cursor: pointer;
+}
+
+.social-icons div .fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-icons div.facebook {
+    /* background: #5178d9; */
+    font-size: 24px;
+}
+
+.social-icons div.twitter {
+    /* background: #41caf6; */
+    font-size: 24px;
+
+}
+
+.social-icons div.linkedin {
+    /* background: #0077B5; */
+    font-size: 24px;
+
+}
